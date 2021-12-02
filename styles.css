@@ -17,7 +17,6 @@
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
-    --grey-text: #757575;
     --off-white: #faf8f7;
     --just-white: #fff;
 }
@@ -120,6 +119,8 @@ main {
     background-color: var(--off-white);
 }
 
+
+
 .main--exchange-container {
     width: 100%;
     height: auto;
@@ -153,9 +154,149 @@ main {
 }
 
 .main--exchange-container-title p {
-    font-weight: 500;
+    margin-bottom: 30px;
     font-size: 1.4rem;
+    font-weight: 500;    
     line-height: 1.8rem;
-    font-weight: 500;
-    color: var(--grey-text);
+    color: #757575
+
 }
+
+/* tabla 1 */
+
+.main--currency-table , 
+.main--commissions-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main--currency-table .currency-table--title,
+.main--commissions-table .commissions-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: left;
+    margin-left: 28px;
+    font-family: "DM Sans", sans-serif;
+    color: #FF9536;
+
+}
+
+.main--commissions-table .commissions-table--title {
+    color: var(--secondary-blue);
+}
+
+.currency-table--container, 
+.commissions-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+ 
+.currency-table--container table,
+.commissions-table--container table {
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table--container td,
+ .commissions-table--container td {
+    width: 50%;
+    height: 39px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.currency-table--container .table__top-left,
+.commissions-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.currency-table--container .table__top-right, 
+.commissions-table--container .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+
+.currency-table--container .table__bottom-left,
+.commissions-table--container .table__bottom-left  {
+    border-radius: 0 0 0 15px ;
+}
+
+.currency-table--container .table__bottom-right,
+.commissions-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0 ;
+}  
+
+.currency-table--container .table-left, 
+.commissions-table--container .table-left {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.currency-table--container .table-right {
+    font-size: 1.4rem;
+    font-style: normal;
+    list-style: 1.7rem;
+    color: #757575;
+}
+
+.currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 11px;
+    background: url('./assets/icons/trending-down.svg.svg') center/cover no-repeat;
+}
+
+.currency-table--container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 11px;
+    background: url('./assets/icons/trending-up.svg.svg') center/cover no-repeat;
+}
+
+.currency-table--date, 
+.commissions-table--date {
+    
+    width: 173px;
+    height: 31px;
+    margin: 16px auto; 
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+}
+
+.commissions-table--date {
+    background-color: var(--soft-blue);
+}
+
+.currency-table--date p,
+.commissions-table--date p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 8px;
+    color: var(--warm-black);
+}
+
+
+
